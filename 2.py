@@ -84,6 +84,14 @@ def main():
             n = input('Enter the items you want to order: ')
             tables.append({'table no': t, 'order': n})
             print('Order booked successfully.')
+            
+            # Calculate bill
+            bill = 0
+            for item in menu:
+                if item['name'] in n:
+                    bill += item['price']
+            print(f'Your bill is: ${bill:.2f} (tax included).')
+            
         elif service == 'e':
             edit_menu()
         elif service == 's':
