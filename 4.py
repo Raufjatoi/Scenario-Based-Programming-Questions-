@@ -60,7 +60,7 @@ def voice_command(command):
     else:
         print("Command not recognized")
 
-# Test functionality
+# testin
 adjust_lighting('kitchen', 'on', brightness=70, color='warm white')
 set_temperature(72)
 lock_door('front_door')
